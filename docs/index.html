@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Cuboid 150W Box Mod goodies</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		Cuboid 150W Box Mod goodies
+	</header>
+
+	<main>
+		<section>
+			<header>Logos</header>
+			<div id="logos">
+				<div id="column0"></div>
+				<div id="column1"></div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		made by
+		<a href="//iiiypuk.me/">iiiypuk</a>
+		with love
+	</footer>
+
+	<script type="text/javascript">
+		const LOGOS = [
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/skull_01_1.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/skull_01_2.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/skull_02_b.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/skull_02_w.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/pacman_l.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/pacman_r.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/phc.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/smok.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/steam.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/python.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/bitch_label.bmp',
+			'https://raw.githubusercontent.com/iiiypuk/cuboid/master/logos/0xi3k.bmp',
+		];
+
+		window.onload = window.onload = function() {
+			LOGOS.forEach((e, i) => {
+				if (i % 2) {
+					let column = document.getElementById('column1');
+					let p = document.createElement('p');
+
+					let img = document.createElement('img');
+					img.alt = e.split('/')[e.split('/').length - 1];
+					img.src = e;
+					p.appendChild(img);
+
+					let link = document.createElement('a');
+					let text = document.createTextNode('Download');
+					link.title = text.data;
+					link.href = e;
+					link.appendChild(text);
+					p.appendChild(link);
+
+					column.appendChild(p);
+				}
+				else {
+					let column = document.getElementById('column0');
+					let p = document.createElement('p');
+
+					let img = document.createElement('img');
+					img.alt = e.split('/')[e.split('/').length - 1];
+					img.src = e;
+					p.appendChild(img);
+
+					let link = document.createElement('a');
+					let text = document.createTextNode('Download');
+					link.title = text.data;
+					link.href = e;
+					link.appendChild(text);
+					p.appendChild(link);
+
+					column.appendChild(p);
+				}
+
+			});
+		};
+	</script>
+</body>
+</html>

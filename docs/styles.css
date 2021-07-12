@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body {
+	background-color: #2d3436;
+	color: #ffffff;
+	font-family: ABeeZee;
+	font-size: 1.2rem;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto 96px;
+}
+
+header {
+	font-size: 2rem;
+	padding: 16px;
+}
+
+section header {
+	font-size: 1.5rem;
+}
+
+footer {
+	border-top: 1px solid #000000;
+	background-color: #2d3436;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    padding: 16px;
+}
+
+#column0, #column1 {
+	display: inline-block;
+}
+
+a {
+	color: #d63031;
+}
